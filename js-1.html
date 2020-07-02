@@ -7,41 +7,16 @@
 </head>
 <body> 
     <Script>
-            
-            function add(a,b) {
-            return a + b
+        //Задание не из обучения, книжку читаю, объясните, пожалуйста,
+        // почему цикл for останавливается на цифре 6561, а while на 19683? по идее условия же одинаковы
+            for(i = 3; i < 10000; i = i * 3) {
+                console.log(i);
             }
 
-            function pro(a,b){
-            return a * b;
-            }
-
-            function sub(a,b){
-            return a - b;
-            } 
-
-            function div(a,b){
-            return a / b;
-            }
-            let operation;
-
-            function mathOperation(a, b, c = operation){
-                //return function(operation);
-                //console.log(operation()) 
-                if (operation = add)
-                    document.write(add);
-                if (operation = pro)
-                    document.write(a * b);
-                if (operation = sub)
-                    document.write(a - b);
-                if (operation = div)
-                    document.write(a / b);
-            }
-
-            document.write(mathOperation(5,2,add));
-            document.write(mathOperation(5,2,pro));
-            document.write(mathOperation(5,2,sub));
-            document.write(mathOperation(5,2,div));
+            let a = 3; 
+                while(a < 10000){
+                console.log(a = a * 3);
+                }
 
         /*
             Task 2 
@@ -155,7 +130,42 @@
             case 14: console.log("15");
             break;
          }
+            Этот вариант уже на уроке посмотрела  
 
+            let a = +prompt("Введите число от 0 до 15");
+
+            switch(a){
+            case 1: console.log(++a);
+            
+            case 2: console.log(++a);
+            
+            case 3: console.log(++a);
+            
+            case 4: console.log(++a);
+            
+            case 5: console.log(++a);
+            
+            case 6: console.log(++a);
+            
+            case 7: console.log(++a);
+            
+            case 8: console.log(++a);
+            
+            case 9: console.log(++a);
+            
+            case 10: console.log(++a);
+            
+            case 11: console.log(++a);
+            
+            case 12: console.log(++a);
+            
+            case 13: console.log(++a);
+            
+            case 14: console.log(++a);
+            break;
+            default: console.log("Вы ввели неверное число");
+            break;
+         }
 
 
             5.
@@ -222,9 +232,34 @@
 
             }
             
-            mathOperation;
-            
+            mathOperation(10,5,"+");
+            mathOperation(10,5,"-");
+            mathOperation(10,5,"*");
+            mathOperation(10,5,"/");
 
+
+
+
+            7. 
+            
+            null < 0; //false
+            null > 0; // false
+            null == 0; //false
+            null = 0; //синтаксическая ошибка, 0 является числом, число нельзы задать для null
+
+
+
+
+
+
+            8. 
+
+            function power(val,pow){
+                if 
+                console.log(val * val);
+
+            } 
+        
 
 
     */
@@ -258,6 +293,8 @@
             //"1000108"
             // Происходит склеивание строк, потому что 108 является строкой 
     */
+
+    
     </Script>
     
 </body>
