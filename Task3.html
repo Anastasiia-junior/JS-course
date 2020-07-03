@@ -8,17 +8,143 @@
 <body>
     <script>
 
-        //1. 
+        console.log("4-е задание")
+        for(count = 0; count<10; console.log(count++)){};
 
 
+        console.log("1-е задание")
+        let allNumbers = 1;
+        let easyNumbers = [];
+        
+        while(allNumbers <= 100){
+            if(allNumbers % 3 !== 0 && allNumbers % 5 !== 0){
+                easyNumbers.push(allNumbers);
+            } 
+            allNumbers += 2;
+        }
+        console.log(easyNumbers);
 
-        let count = 1;
-            let easyNumber = [];
-            while(count <= 100){
-                if(count)
-                count++;
-                easyNumber.push()
+
+        console.log("5-е задание")
+        let x = "x";
+        let string = 0;
+        do{
+        x += "x";
+        console.log(x);
+        string++;
+        } while(string <= 20);
+
+        /* 
+        1.
+        //В общем и целом работает, но не совсем правильно
+        //т.е. попадаются числа, которые делятся на 7,9 
+        //и еще непорядок с тем, что в массив попадает только числа, 
+        //начиная с 7. В общем, я не понимаю какую я должна произвести проверку простых чисел,
+        //чтобы условие было унифицированным?
+
+
+        let allNumbers = 2;
+        let easyNumbers = [2];
+        while(allNumbers <= 100){
+            if(allNumbers % 2 !== 0 && allNumbers % 3 !== 0 && allNumbers % 5 !== 0){
+                easyNumbers.push(allNumbers);
+                ++allNumbers;
+            } 
+            ++allNumbers;
+        }
+        console.log(easyNumbers);
+        
+
+
+        let allNumbers = 1;
+        let easyNumbers = [];
+        
+        while(allNumbers <= 100){
+            if(allNumbers % 3 !== 0 && allNumbers % 5 !== 0){
+                easyNumbers.push(allNumbers);
+            } 
+            allNumbers += 2;
+        }
+        console.log(easyNumbers);
+
+        //это уже наставник посоветовал, но я пока что не разобралась как с этим работать
+        
+        let allNumbers = 1;
+        let easyNumbers = [];
+        function isPrime(number) {
+            for (let i = 2; i < Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                return false;
+                }
             }
+            return true;
+            }
+        while(allNumbers <= 100){
+            if(isPrime){
+                easyNumbers.push(allNumbers);
+            } 
+            allNumbers += 1;
+        }
+        console.log(easyNumbers);
+        */
+
+
+
+        //4. 
+
+        //Единственное простое задание для меня оказалось :DD
+
+        //for(count = 0; count<10; console.log(count++)){}
+
+
+
+        //5.
+
+        //не понимаю почему у меня с цифрами работает, а со строкой нет, 
+        //почему строку к строке не прибавляет? если я, напрример х = "х" сделаю?
+
+        /*
+        let x = 1;
+        let string = 0;
+        while(string <= 10){
+            console.log(x++);
+            string++;
+        }
+        
+        
+        for(string = 1; string <= 10; string++ ){
+            console.log(x++);
+        }
+
+        ---------------------------------------------
+        
+        let x = "x";
+        let string = 0;
+        do{
+            console.log(x + x);
+            string++;
+        } while(string <= 20);
+        
+
+        let x = "x";
+        for(string = 1; string <= 20; string++){
+            console.log(x + x);
+        }
+        //до этого дошли уже с наставником, 
+        //никак не могла понять почему раньше к х не приклеивался новый х
+        
+        let x = "x";
+        let string = 0;
+        do{
+        x += "x";
+        console.log(x);
+        string++;
+        } while(string <= 20);
+        */
+        
+        
+    
+
 
 
 
