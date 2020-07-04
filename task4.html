@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        console.log("Первое задание");
+
+        let num = prompt("Введите число от 0 до 999");
+        
+        function invertor(num){
+            if(num >= 0 && num <= 999){
+                return {
+                    hundrets: num.slice(0,1),
+                    dozen: num.slice(1,2),
+                    items: num.slice(2,3)
+                }
+            } else {
+                console.log("Вы ввели число не по условию");
+                return {
+                    hundrets: 0,
+                    dozen: 0,
+                    items: 0
+                }
+            }
+        }
+        console.log(invertor(num));
+        
+
+        console.log("Второе задание");
+
+        console.log("Третее задание");
+        
+
+
+    </script>
+</body>
+</html>
