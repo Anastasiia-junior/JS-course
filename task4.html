@@ -32,9 +32,42 @@
         console.log(invertor(num));
         
 
-        console.log("Второе задание");
+        console.log("Второе задание, еще не доделала");
 
-        console.log("Третее задание");
+
+        let itemCount = 2;
+
+        const IDS = [1, 2, 3, 4];
+        const names = ["T-shirt", "trousers", "socs", "glasses"];
+        const size = ["s", "m", "37-42", "s"];
+        const price = [600, 1200, 15, 7];
+
+        let itemsCatalog = [];
+        function newItem(id, name, size, price){
+            return {
+                id: id,
+                name: name,
+                size: size,
+                price: price
+            }
+        }
+        
+        IDS.forEach((id, index) =>{
+            itemsCatalog.push(newItem(IDS[index], names[index], size[index], price[index]))
+        });
+
+        const curt = {
+            items: itemsCatalog,
+            //не пойму почему при извлечении метода, он говорит,
+            //что значение не определено //undefined 
+            //в операторы у функции можно подставлять переменную? 
+            priceCount(index, itemCount) {
+                itemCount *= this.itemsCatalog[index].price;
+            }
+        }
+
+
+        //console.log("Третее задание");
         
 
 
