@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let itemCount = 2;
+        
+        const IDS = [1, 2, 3, 4];
+        const names = ["T-shirt", "trousers", "socs", "glasses"];
+        const size = ["s", "m", "37-42", "s"];
+        const price = [600, 1200, 15, 7];
+
+        
+        function newItem(id, name, size, price){
+            return { id, name, size, price }
+        }
+        function initCatalog() {
+            return names.map((name, index) => newItem(IDS[index], name, size[index], price[index]))
+        }
+        /*
+        IDS.forEach((id, index) =>{
+            itemsCatalog.push(newItem(IDS[index], names[index], size[index], price[index]))
+        });
+        */
+        const basket = {
+            items: [],
+            add(item) {
+                //
+            },
+            remove(item) {
+                //
+            }
+        };
+        const catalog = {
+            items: [],
+            init() {
+                this.items = initCatalog();
+            }
+        };
+        catalog.init();
+    </script>
+</body>
+</html>
