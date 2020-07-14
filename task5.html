@@ -37,8 +37,13 @@
         };
         const catalog = {
             items: [],
+            container: '#catalog',
             init() {
                 this.items = initCatalog();
+                this._renser
+            },
+            _render() {
+
             }
         };
         catalog.init();
