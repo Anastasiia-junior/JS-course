@@ -19,17 +19,37 @@
             //1000 + "108"
             //"1000108"
             // Происходит склеивание строк, потому что 108 является строкой 
-        function degree (val, pow) {
+        let a = 0;
+            function degree (val, pow) {
             let count = 1;
-            if (count <= pow) {
-                val * val;
+            if (pow == 1){
+                return val;
+            } else if (count < pow) {
+                let increase = val * val;
                 count++;
-                degree();
+                degree(val, pow);
             } else {
-                return
-            }
+                return increase;
+            };
         };
-        console.log(degree(2, 3))
+
+        /*
+        function degree (val, pow) {
+            if (pow = 0) {
+                console.log("0");
+            } else if ( pow < 0 ) {
+                console.log("введите положительное число");
+            } else {
+
+            }
+        }
+        */
+
+        a = degree(2, 3);
+        console.log(a);
+
+        a = degree (2, 5);
+        console.log (a);
 
     </Script>
     
